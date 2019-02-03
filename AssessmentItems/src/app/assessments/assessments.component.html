@@ -1,0 +1,8 @@
+<h2>Assessments</h2>
+<ul class="assessments">
+    <li *ngFor="let assessment of assessments">
+      <a routerLink="/assessments/{{assessment.Id}}">
+        <span class="badge">{{assessment.Id}}</span> {{assessment.AssessmentName}}
+      </a>
+    </li>
+</ul>
